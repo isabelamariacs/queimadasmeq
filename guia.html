@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Guia Prático - queimadasmeq</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="site-header">
+  <nav class="navbar container" aria-label="Menu principal">
+    <a class="logo script" href="index.html">queimadasmeq</a>
+    <button class="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu" onclick="toggleMenu()">☰</button>
+    <ul id="menu" class="nav-links">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="sobre.html">Sobre o Projeto</a></li>
+      <li><a href="conteudo.html">Conteúdo</a></li>
+      <li><a href="consequencias.html">Consequências</a></li>
+      <li><a href="Problema.html">Problema</a></li>
+      <li><a class="active" href="guia.html">Guia</a></li>
+      <li><a href="denuncias.html" class="badge">Denúncias</a></li>
+      <li><a href="referencias.html">Referências</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="container section">
+  <h1 class="section-title">Guia Prático para a População</h1>
+
+  <section class="grid-2">
+    <article class="card">
+      <h2>Prevenção</h2>
+      <ul class="list">
+        <li>Não use fogo para limpar terrenos.</li>
+        <li>Nunca jogue bitucas de cigarro ou fósforos no chão.</li>
+        <li>Não queime lixo.</li>
+        <li>Mantenha terrenos limpos e crie aceiros para reduzir a propagação do fogo.</li>
+        <li>Denuncie queimadas ilegais (193 ou Defesa Civil).</li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <h2>Como agir ao avistar uma queimada</h2>
+      <ul class="list">
+        <li>Não tente apagar sozinho incêndios grandes, com chamas altas ou em dias de vento forte.</li>
+        <li>Afaste pessoas idosas, crianças e animais da área de risco.</li>
+        <li>Use máscara ou pano úmido para proteger as vias respiratórias.</li>
+        <li>Evite respirar fumaça e, se estiver dirigindo, mantenha os faróis acesos em áreas com névoa de fumaça.</li>
+        <li>Acione imediatamente as autoridades (veja os contatos na aba de DENÚNCIAS do site).</li>
+      </ul>
+    </article>
+  </section>
+
+  <section class="grid-2">
+    <article class="card">
+      <h2>Denúncias no nosso site</h2>
+      <p>Se você identificar uma queimada, clique na aba de DENÚNCIAS. Lá você encontrará todos os contatos oficiais, como Bombeiros, Defesa Civil e órgãos ambientais.</p>
+      <p>Informe localização exata, tamanho do fogo e riscos para pessoas ou casas.</p>
+      <p>Quanto mais informações precisas, mais rápido as autoridades podem agir.</p>
+      <p>Sua denúncia pode salvar vidas, proteger a natureza e reduzir prejuízos econômicos para a comunidade.</p>
+      <a class="btn btn-danger" href="denuncias.html">Ir para Denúncias</a>
+    </article>
+
+    <article class="card">
+      <h2>Proteção contra a fumaça</h2>
+      <ul class="list">
+        <li>Use máscara ou pano úmido.</li>
+        <li>Feche portas e janelas em casa.</li>
+        <li>Beba bastante água.</li>
+        <li>Crianças, idosos e pessoas com problemas respiratórios devem permanecer em casa.</li>
+      </ul>
+    </article>
+  </section>
+
+  <section class="grid-2">
+    <article class="card">
+      <h2>Após o fogo</h2>
+      <ul class="list">
+        <li>Não volte ao local queimado imediatamente.</li>
+        <li>Procure atendimento médico se houver falta de ar ou tosse persistente.</li>
+        <li>Avise autoridades ambientais sobre danos ou riscos.</li>
+        <li>Participe de ações de recuperação ambiental, como reflorestamento ou proteção do solo.</li>
+      </ul>
+      <p><strong>Lembre-se:</strong> Queimada é crime ambiental (Lei 9.605/1998). Prevenir e denunciar salva vidas e protege o meio ambiente.</p>
+    </article>
+
+    <article class="card tip">
+      <h2></h2>
+      <ul class="list">
+        
+      </ul>
+    </article>
+  </section>
+
+  <!-- QUIZ INTERATIVO -->
+  <section class="card quiz">
+    <h2>Quiz rápido: o que você aprendeu?</h2>
+
+    <form id="quizForm" onsubmit="avaliarQuiz(event)">
+      <fieldset>
+        <legend>1) É seguro apagar um incêndio grande sozinho?</legend>
+        <label><input type="radio" name="q1" value="errada"> Sim, com baldes de água.</label>
+        <label><input type="radio" name="q1" value="correta"> Não, deve-se acionar as autoridades.</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>2) Qual número ligar em caso de fogo ativo?</legend>
+        <label><input type="radio" name="q2" value="correta"> 193 - Corpo de Bombeiros</label>
+        <label><input type="radio" name="q2" value="errada"> 0800 061 8080 - IBAMA</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>3) Jogar bitucas no chão pode causar queimadas?</legend>
+        <label><input type="radio" name="q3" value="correta"> Sim, é uma prática perigosa.</label>
+        <label><input type="radio" name="q3" value="errada"> Não, não oferece risco.</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>4) Para reduzir fumaça em casa você deve…</legend>
+        <label><input type="radio" name="q4" value="correta"> Fechar portas e janelas.</label>
+        <label><input type="radio" name="q4" value="errada"> Abrir todas as janelas.</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>5) Após o fogo, você deve:</legend>
+        <label><input type="radio" name="q5" value="correta"> Evitar voltar imediatamente e buscar atendimento se necessário.</label>
+        <label><input type="radio" name="q5" value="errada"> Retornar ao local para filmar e postar.</label>
+      </fieldset>
+
+      <button class="btn" type="submit">Conferir resultado</button>
+      <p id="resultadoQuiz" aria-live="polite" class="quiz-resultado"></p>
+    </form>
+  </section>
+
+  <div class="cta-row">
+    <a class="btn btn-danger" href="denuncias.html">Denunciar Queimada</a>
+    <a class="btn soft" href="index.html">Voltar ao Início</a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  © 2025 - Projeto de PPA IFBA - Campus Euclides da Cunha.
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

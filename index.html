@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="queimadasmeq - Conscientização sobre queimadas na região sisaleira da Bahia" />
+  <title>queimadasmeq - Início</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Menu principal">
+      <a class="logo script" href="index.html" aria-label="queimadasmeq - início">queimadasmeq</a>
+      <button class="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu" onclick="toggleMenu()">
+        ☰
+      </button>
+      <ul id="menu" class="nav-links">
+        <li><a class="active" href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre o Projeto</a></li>
+        <li><a href="conteudo.html">Conteúdo</a></li>
+        <li><a href="consequencias.html">Consequências</a></li>
+        <li><a href="Problema.html">Problema</a></li>
+        <li><a href="guia.html">Guia</a></li>
+        <li><a href="denuncias.html" class="badge">Denúncias</a></li>
+        <li><a href="referencias.html">Referências</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO: imagem em tela cheia com texto em cima -->
+  <section class="hero" role="banner" aria-label="Introdução">
+    <div class="hero-overlay"></div>
+    <div class="hero-content container">
+      <h1 class="script hero-title">Queimadas na região sisaleira da Bahia</h1>
+      <p class="hero-subtitle">
+        O uso da tecnologia para o enfrentamento desse problema (com foco nas cidades de Monte Santo, Euclides da Cunha e Quijingue).
+      </p>
+      <div class="hero-actions">
+        <a href="sobre.html" class="btn btn-outline" aria-label="Ir para Sobre o Projeto">Sobre o Projeto</a>
+        <a href="denuncias.html" class="btn btn-danger" aria-label="Ir para Denúncias">Denunciar Queimada</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESUMO -->
+  <section class="container section">
+    <div class="grid-2">
+      <div>
+        <h2 class="section-title">Objetivo do Projeto</h2>
+        <p class="lead">
+          Breve resumo do projeto: objetivo de conscientizar e instruir a população.
+        </p>
+        <div class="cta-row">
+          <a class="btn" href="guia.html">Acessar Guia Prático</a>
+          <a class="btn soft" href="Problema.html">Entenda o Problema</a>
+        </div>
+      </div>
+      <div class="card tip">
+        <h3>Como navegar</h3>
+        <p>Use o menu para explorar as abas e conhecer as ações, contatos de denúncia e conteúdos educativos.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARROSSEL -->
+  <section class="container section" aria-label="Carrossel de imagens">
+    <h2 class="section-title">Cenários das queimadas</h2>
+    <div class="carousel" role="region" aria-roledescription="carrossel">
+      <button class="control prev" aria-label="Slide anterior" onclick="plusSlides(-1)">❮</button>
+      <div class="slides">
+        <img src="img/img/queimada1.jpg" alt="Paisagem impactada por queimadas - imagem 1" />
+      </div>
+      <div class="slides">
+        <img src="img/img/queimada2.jpg" alt="Área com fumaça de queimada - imagem 2" />
+      </div>
+      <div class="slides">
+        <img src="img/img/queimada3.jpg" alt="Vegetação queimada - imagem 3" />
+      </div>
+      <button class="control next" aria-label="Próximo slide" onclick="plusSlides(1)">❯</button>
+
+      <div class="dots" role="tablist" aria-label="Selecionar slide">
+        <button class="dot" aria-label="Slide 1" onclick="currentSlide(1)"></button>
+        <button class="dot" aria-label="Slide 2" onclick="currentSlide(2)"></button>
+        <button class="dot" aria-label="Slide 3" onclick="currentSlide(3)"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer class="site-footer">
+    © 2025 - Projeto de PPA IFBA - Campus Euclides da Cunha.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
